@@ -1,7 +1,7 @@
 # Project Overview
 
 ## Project Name
-**Jirah (Local Helpers)**
+**Jirah|جٍيره (Local Helpers)**
 
 ## Project Idea
 An application that connects people who need small daily assistance (such as fixing a device, buying groceries, or learning computer basics) with nearby neighbors who can help.
