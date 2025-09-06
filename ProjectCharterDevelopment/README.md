@@ -54,13 +54,5 @@
 
 ## 5. High-Level Plan
 
-The project will progress through the following stages:
-- **Stage 1:** Idea Development (Completed)
-- **Stage 2:** Project Charter Development (Current)
-- **Stage 3:** Technical Documentation
-- **Stage 4:** MVP Development
-- **Stage 5:** Project Closure
+<img width="709" height="292" alt="Screenshot 1447-03-11 at 18 11 34" src="https://github.com/user-attachments/assets/110988ad-dc8b-4e82-bb66-8a8e4b0159c2" />
 
----
-
-![Project Timeline](https://i.imgur.com/your-gantt-chart-image.png)
