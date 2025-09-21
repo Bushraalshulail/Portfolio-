@@ -16,10 +16,10 @@ This project addresses everyday challenges, encourages social connections among 
 
 # Team Formation
 
-- **Project Manager:** Nada  
-- **Documentation Lead:** Bushra  
-- **Research Lead:** Shoug  
-- **Idea Contributor:** Muneera  
+- **Project Manager - frontend:** Nada  
+- **Documentation Lead - backend:** Bushra  
+- **Research Lead - frontend:** Shoug  
+- **Idea Contributor - API:** Muneera  
 - **Communication Tools:** Slack, Telegram, and in-person meetings in the meeting room  
 
 ---
