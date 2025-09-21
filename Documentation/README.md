@@ -18,7 +18,7 @@ This project addresses everyday challenges, encourages social connections among 
 
 - **Project Manager - frontend:** Nada  
 - **Documentation Lead - backend:** Bushra  
-- **Research Lead - frontend:** Shoug  
+- **Research Lead - frontend:** Shouq  
 - **Idea Contributor - API:** Muneera  
 - **Communication Tools:** Slack, Telegram, and in-person meetings in the meeting room  
 
