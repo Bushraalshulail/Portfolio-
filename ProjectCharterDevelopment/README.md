@@ -18,15 +18,15 @@
 
 | Type | Stakeholders |
 |------|-------------|
-| **Internal** | Project team: Nada (Project Manager), Bushra (Documentation Lead), Shoug (Research Lead), Munira (Idea Contributor) |
+| **Internal** | Project team: Nada, Bushra, Shouq, Munira |
 | **External** | Target users (students, families), Potential partners (such as charitable organizations or community service centers) |
 
 ### Team Roles
 
-- **Project Manager (Nada):** Coordinate tasks, monitor progress, ensure adherence to the plan.
-- **Documentation Lead (Bushra):** Write reports, maintain documentation of project phases.
-- **Research Lead (Shoug):** Analyze competitors, gather user requirements, follow trends.
-- **Idea Contributor (Munira):** Support creativity and innovation, propose suggestions for idea development.
+- **API - (Nada)**
+- **frontend (Bushra)**
+- **backend (Shouq)**
+- **frontend (Munira)**
 
 ## 3. Project Scope
 
