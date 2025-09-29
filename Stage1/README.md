@@ -112,6 +112,8 @@ The application will serve as an interactive directory for gyms in Riyadh, provi
 
 ---
 
-**Project prepared by:** *[Your Team Name]*  
-*Date:* [Insert Date]
-
+**Project prepared by:
+*Bushra Alshulail*  
+*Nada Alshuraidah*
+*Munira Alsubaie*
+*Shouq Alosaimi*
