@@ -115,5 +115,5 @@ The application will serve as an interactive directory for gyms in Riyadh, provi
 **Project prepared by:
 *Bushra Alshulail*  
 *Nada Alshuraidah*
-*Munira Alsubaie*
-*Shouq Alosaimi*
+-**Munira Alsubaie**
+-**Shouq Alosaimi**
