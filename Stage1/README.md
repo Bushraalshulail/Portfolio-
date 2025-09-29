@@ -1,29 +1,5 @@
 # Stage 1 Report – Gym Finder Riyadh
 
-## Table of Contents
-
-1. [Project Idea](#project-idea)
-2. [Objectives](#objectives)
-3. [Importance](#importance)
-4. [Ideas Explored](#ideas-explored)
-5. [Selected MVP Concept](#selected-mvp-concept)
-
-   * Summary
-   * Core Features
-   * Reasons for Selection
-   * Challenges and Opportunities
-6. [Idea Development Process](#idea-development-process)
-
-   * Brainstorming
-   * Evaluation
-   * Decision-Making
-7. [Team Formation Overview](#team-formation-overview)
-8. [Tips for Success](#tips-for-success)
-9. [Deliverables](#deliverables)
-10. [Team Members](#team-members)
-
----
-
 ## Project Idea
 
 **Gym Finder Riyadh** is a web-based platform (with plans for a future mobile application) that aggregates gyms and their facilities, such as equipment, swimming pools, jacuzzis, and more.
