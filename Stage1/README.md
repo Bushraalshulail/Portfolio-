@@ -128,7 +128,10 @@ By the end of Stage 1, the team achieved:
 
 ## Team Members
 
-* **Bushra Alshulail**
-* **Nada Alshuraidah**
-* **Munira Alsubaie**
-* **Shouq Alosaimi**
+* **Bushra Alshulail** - Documentation Lead - backend
+* **Nada Alshuraidah** - Project Manager - frontend
+* **Munira Alsubaie** - Research Lead - frontend
+* **Shouq Alosaimi** - Idea Contributor - API
+
+* **Communication Tools:** Slack, Telegram, and in-person meetings in the meeting room
+
