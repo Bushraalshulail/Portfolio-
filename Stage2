@@ -1,107 +1,49 @@
-# Stage 2 Project Charter – Gym Finder Riyadh
+# Gym Finder Riyadh – Stage 2 Project Charter
 
 ## Project Objectives
+**Purpose:** Help users choose gyms in Riyadh easily by providing clear info on facilities, equipment, and amenities.  
+**SMART Objectives:**  
+- **MVP:** Web-based platform with gym search by name/equipment and detailed profiles.  
+- **Usability:** ≥85% user satisfaction in trials.  
+- **Coverage:** Onboard ≥10 gyms in Riyadh.  
+- **Data Accuracy:** ≥90% verified info.  
+- **Scalability:** Plan for mobile app and expansion.
 
-### Purpose
-The **Gym Finder Riyadh** project aims to simplify the process of selecting a suitable gym by providing clear, accurate information about available facilities, equipment, and amenities across gyms in Riyadh.
+## Stakeholders & Team Roles
+**External Stakeholders:** Gym-goers, gym owners/managers, fitness chains, advertisers.  
+**Team Roles:**  
+- **Bushra Alshulail:** Back-End Developer  
+- **Nada Alshuraidah:** Front-End Developer  
+- **Munira Alsubaie:** Database/Admin  
+- **Shouq Alosaimi:** API Developer  
 
-This platform helps users make informed decisions without multiple physical visits and enhances transparency within the fitness industry.
-
-### SMART Objectives
-1. **MVP Development:** Deliver a web-based MVP including:
-   - Searching gyms by name.
-   - Searching by equipment/facility.
-   - Displaying detailed gym profiles.
-
-2. **Usability:** Achieve **≥85% user satisfaction** in initial trials by ensuring a simple, intuitive search and navigation experience.
-
-3. **Coverage:** Onboard **at least 10 gyms** in Riyadh, ensuring diversity in gym types and locations.
-
-4. **Data Accuracy:** Maintain **≥90% information accuracy** during initial trials through active admin updates and verification.
-
-5. **Scalability Planning:** Prepare system architecture to enable smooth transition to a mobile app and expansion to other cities/facilities.
-
----
-
-## Stakeholders and Roles
-
-### External Stakeholders
-- **Target Users:** Gym-goers in Riyadh.
-- **Gym Owners & Managers:** Source of data and potential partners.
-- **Potential Partners:** Fitness chains, sports complexes.
-- **Future Advertisers:** Fitness brands, equipment suppliers.
-
-### Team Roles
-- **Bushra Alshulail** – Back-End Developer
-- **Nada Alshuraidah** – Front-End Developer
-- **Munira Alsubaie** – Database/Admin
-- **Shouq Alosaimi** – API Developer
-
-**Responsibilities**
-- **Front-End:** Design and implement UI/UX, ensure responsive and intuitive interface.
-- **Back-End:** Implement server-side logic, database interactions, and search functionality.
-- **API Development:** Build and maintain APIs connecting front-end and back-end.
-- **Database/Admin:** Collect, verify, and update gym data; maintain data integrity.
-
----
+**Responsibilities:**  
+- **Front-End:** UI/UX design, responsive interface  
+- **Back-End:** Server-side logic, database  
+- **API:** Connect front-end and back-end  
+- **Database/Admin:** Collect, verify, update gym data  
 
 ## Project Scope
+**In-Scope:** Web platform, search gyms by name/equipment, gym profiles, admin panel, Riyadh gyms only.  
+**Out-of-Scope:** Mobile app, other cities, memberships, reviews, bookings, ads.
 
-### In-Scope (MVP Deliverables)
-- Web-based platform with gym search and profiles.
-- Search gyms by name.
-- Search by equipment or facility type.
-- Display detailed gym profiles (equipment list, facilities, location/map).
-- Admin panel for managing and updating gym data.
-- Initial coverage limited to gyms within Riyadh.
-
-### Out-of-Scope (Excluded from MVP)
-- Mobile application in the first phase (planned for advanced stages).
-- Expansion to other Saudi cities (planned later).
-- Displaying gym memberships or subscription pricing.
-- User reviews, ratings, or social features.
-- Online booking or payment integration.
-- Partnerships or advertisement integrations in the first release.
-
----
-
-## Risks and Mitigation
-
-| Risk                       | Description                                         | Mitigation Plan                                                                                     |
-|----------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| **Data Accuracy**          | Gym information may become outdated or incorrect    | Establish admin verification processes and periodic reviews                                         |
-| **Gym Participation**      | Gyms may be reluctant to share details              | Start with publicly available info; later form partnerships and offer incentives                    |
-| **Scalability Challenges** | System may struggle with larger data when expanding | Design scalable architecture from the start and optimize databases                                  |
-| **User Adoption**          | Users may not use the platform if value is unclear  | Focus on strong marketing and emphasize unique features (equipment-based search)                    |
-| **Competition**            | Larger platforms may replicate the idea             | Build strong brand presence early and focus on local accuracy and detail                            |
-| **User Expectation**       | Users may prefer a mobile app                       | Ensure web platform is fully responsive, mobile-friendly, and communicate roadmap for mobile launch |
-
----
+## Risks & Mitigation
+- **Data Accuracy:** Regular admin checks  
+- **Gym Participation:** Start with public info; offer incentives  
+- **Scalability:** Build scalable architecture  
+- **User Adoption:** Highlight unique features, simple interface  
+- **Competition:** Focus on local accuracy and brand  
+- **Mobile Expectation:** Responsive web, communicate roadmap
 
 ## High-Level Plan
-
-**Phase 1 – MVP Development**
-- Design the web interface and database structure.
-- Develop core search functionality (by gym name and equipment/facility).
-- Implement gym profiles and admin panel.
-
-**Phase 2 – Testing and Feedback**
-- Conduct platform testing with target users.
-- Collect feedback on usability and data accuracy.
-
-**Phase 3 – Data Onboarding & Refinement**
-- Add gyms in Riyadh and ensure accurate information.
-- Optimize platform based on user feedback.
-
-**Phase 4 – Scalability Planning**
-- Prepare for future expansion to additional cities and sports facilities.
-- Plan architecture for potential mobile app transition.
-
----
+1. **MVP Development:** Web interface, database, search, profiles, admin panel  
+2. **Testing & Feedback:** User trials, gather usability feedback  
+3. **Data Onboarding & Refinement:** Add gyms, verify info, optimize UI  
+4. **Scalability Planning:** Prepare for expansion and future mobile app
 
 ## Team Members
-- **Bushra Alshulail** – Back-End Developer
-- **Nada Alshuraidah** – Front-End Developer
-- **Munira Alsubaie** – Database/Admin
-- **Shouq Alosaimi** – API Developer
+- **Bushra Alshulail:** Back-End Developer  
+- **Nada Alshuraidah:** Front-End Developer  
+- **Munira Alsubaie:** Database/Admin  
+- **Shouq Alosaimi:** API Developer
 
