@@ -44,36 +44,13 @@ Users can:
 
 ## Ideas Explored
 
-### 1. Neighborhood App ("Jeera")
-
-* **Weaknesses:**
-
-  * Hard to control user behavior and ads.
-  * Moderation and responsible use are challenging.
-* **Decision (Rejected):**
-
-  * Although socially impactful, difficulties in sustainability and control outweighed the benefits.
-
-### 2. Gym Finder (Selected Idea)
-
-* **Strengths:**
-
-  * Practical, solves a clear problem.
-  * Reliable data maintained by admins (not users).
-* **Weaknesses:**
-
-  * Requires ongoing data collection and updates.
-* **Decision (Accepted):**
-
-  * High demand and clear scalability potential.
-  * Feasible as an MVP with manageable challenges.
-
 | Idea                  | Strengths                        | Weaknesses                                    | Decision/Reason                  |
 |-----------------------|----------------------------------|-----------------------------------------------|----------------------------------|
 | Event Meet            | Expands social connections       | Security concerns                             | Rejected – safety issues          |
 | Shopping List Manager | Saves user time                  | May not be used frequently; already common    | Rejected – not innovative enough |
 | Jirah (Local Helpers) | Strong humanitarian aspect       | Difficult to control user behavior, ads, and ensure that people act responsibly    | Rejected – the challenges in user control, moderation, and building a sustainable model outweigh the benefits |
 | Gym Finder Riyadh     | Solves a clear, practical problem in gym selection. _ Data quality controlled by admin, not users      | High effort to collect and maintain data; requires regular updates to stay reliable  |  Selected - Addresses a real market gap with high demand; weaknesses are operational and manageable, scalability and monetization make it a strong MVP  |
+
 ---
 
 ## Selected MVP Concept
