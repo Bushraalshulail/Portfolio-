@@ -31,17 +31,6 @@ Users can:
 
 ---
 
-# Team Formation
-
-- **Project Manager - frontend:** Nada  
-- **Documentation Lead - backend:** Bushra  
-- **Research Lead - frontend:** Shoug  
-- **Research Lead - frontend:** Shouq  
-- **Idea Contributor - API:** Muneera  
-- **Communication Tools:** Slack, Telegram, and in-person meetings in the meeting room  
-
----
-
 ## Ideas Explored
 
 | Idea                  | Strengths                        | Weaknesses                                    | Decision/Reason                  |
@@ -61,9 +50,8 @@ An interactive directory of gyms in Riyadh, launched as a web platform for acces
 
 ### Core Features
 
-* Search gyms by name and view available facilities.
-* Search by facility/equipment across gyms.
-* No user login required.
+* Search gyms by name and view available equipment/facilities.
+* Search by equipment/facilities across gyms.
 * Detailed gym information (equipment, facilities, location).
 * Interactive map view.
 * Admin panel for managing gym data.
@@ -81,6 +69,7 @@ An interactive directory of gyms in Riyadh, launched as a web platform for acces
   * Collecting accurate, updated data.
   * Convincing gyms to share details.
   * Ensuring reliability long-term.
+
 * **Opportunities:**
 
   * Expansion to other cities.
