@@ -1,51 +1,35 @@
 # Stage 2: Project Charter – Gym Finder Riyadh
 
-## Objectives
-The Stage 2 Project Charter helps the team learn project management basics by creating a clear, structured document. It allows the team to:
-
-- Define the project’s purpose, objectives, scope, and key elements.
-- Identify stakeholders, roles, and potential risks.
-- Outline a high-level plan for project progression.
-- Establish a shared understanding and reference point for decision-making.
-
-### Importance
-This charter serves as the foundation for all subsequent work by:
-
-- Structuring and formalizing project information.
-- Clarifying what needs to be accomplished and why.
-- Providing experience in managing risks and roles.
-- Ensuring alignment among team members and stakeholders.
-
----
-
 ## Project Objectives
 
 **Purpose:**  
 Simplify selecting a gym in Riyadh by providing clear, accurate information on facilities, equipment, and amenities. Users can make informed decisions without multiple visits while increasing transparency in the fitness industry.
 
 **SMART Objectives:**  
-- **MVP Development:** Web-based MVP with search by gym name/equipment and detailed profiles.  
+- **MVP Development:** Deliver a web-based MVP within 8 weeks that includes: searching gyms by name, searching by equipment/facility, and displaying detailed gym profiles.  
 - **Usability:** ≥85% user satisfaction during initial trials.  
-- **Coverage:** Onboard ≥10 gyms in Riyadh.  
+- **Coverage:** Onboard ≥10 gyms in Riyadh within the first 3 months of launch.  
 - **Data Accuracy:** Maintain ≥90% verified info.  
-- **Scalability:** Prepare architecture for mobile app and future expansion.
+- **Scalability:** Prepare architecture to allow smooth transition to mobile app and expansion to other cities/facilities within 9 months.
 
 ---
 
 ## Stakeholders & Team Roles
 
-### External Stakeholders
-- **Target Users:** Gym-goers in Riyadh  
-- **Gym Owners & Managers:** Source of data, potential partners  
-- **Potential Partners:** Fitness chains, sports complexes  
-- **Future Advertisers:** Fitness brands, equipment suppliers  
+### Stakeholders
+
+| Type | Stakeholders |
+|------|-------------|
+| **Internal** | Project team: Nada (Project Manager), Bushra (Documentation Lead), Shoug (Research Lead), Munira (Idea Contributor) |
+| **Internal** | Project team: Nada, Bushra, Shouq, Munira |
+| **External** | Target users (gym-goers in Riyadh), Gym owners and managers, Potential partners (fitness chains, sports complexes), Future advertisers (fitness brands, equipment suppliers) |
 
 ### Team Roles
 | Member               | Role                  | Responsibilities                                    |
 |---------------------|----------------------|----------------------------------------------------|
 | Bushra Alshulail     | Back-End Developer   | Server logic, database, search functionality      |
 | Nada Alshuraidah     | Front-End Developer  | UI/UX design, responsive and intuitive interface  |
-| Munira Alsubaie      | Database/Admin       | Collect, verify, update gym data                  |
+| Munira Alsubaie      | Database/Admin       | Collect, verify, update gym data, QA Tester       |
 | Shouq Alosaimi       | API Developer        | Build & maintain APIs connecting front-end/back-end |
 
 ---
@@ -55,16 +39,16 @@ Simplify selecting a gym in Riyadh by providing clear, accurate information on f
 **In-Scope (MVP):**  
 - Web platform with gym search and profiles  
 - Search by gym name or equipment/facility  
-- Detailed gym profiles (equipment, facilities, location/map)  
+- Display detailed gym profiles (equipment list, facilities, location/map).  
 - Admin panel for data management  
-- Riyadh gyms only  
+- Initial coverage limited to gyms within Riyadh.
 
 **Out-of-Scope:**  
 - Mobile app (planned later)  
 - Expansion to other cities  
 - Memberships, pricing, reviews/ratings  
 - Online booking or payment  
-- Ads/partnerships in first release  
+- Partnerships or advertisement integrations with gyms/brands 
 
 ---
 
@@ -73,10 +57,10 @@ Simplify selecting a gym in Riyadh by providing clear, accurate information on f
 | Risk                    | Description                                   | Mitigation                                               |
 |-------------------------|-----------------------------------------------|---------------------------------------------------------|
 | Data Accuracy           | Info may be outdated or incorrect            | Admin verification and periodic updates               |
-| Gym Participation       | Gyms may be reluctant to share details       | Start with public info, offer incentives later        |
+| Gym Participation       | Gyms may be reluctant to share details       | Start with public info, form partnerships and offer incentives later   |
 | Scalability Challenges  | System may struggle with larger data         | Build scalable architecture, optimize database        |
-| User Adoption           | Users may not use platform                    | Highlight unique features, simple interface           |
-| Competition             | Larger platforms may replicate idea          | Focus on local accuracy, strong brand presence        |
+| User Adoption           | Users may not use platform                    | Highlight unique features, simple interface and strong marketing   |
+| Competition             | Larger platforms may replicate idea          | Build strong brand presence early and focus on local accuracy and detail   |
 | User Expectation        | Users may prefer a mobile app                 | Ensure responsive web, communicate roadmap for app    |
 
 ---
