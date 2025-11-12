@@ -435,17 +435,6 @@ This project is licensed under the **MIT License** - شوف ملف [LICENSE](LIC
 
 ---
 
-## 📞 Contact & Support | التواصل والدعم
-
-وجدت مشكلة؟ عندك اقتراح؟ حابب تساهم؟  
-*Found a bug? Have a suggestion? Want to contribute?*
-
-- 🐛 [Report Issues](https://github.com/yourusername/GymFinderRiyadh/issues)
-- 💡 [Feature Requests](https://github.com/yourusername/GymFinderRiyadh/issues/new)
-- 📧 Email: support@gymfinder.sa
-
----
-
 <div align="center">
 
 ### صُنع بـ ❤️ في الرياض | Made with ❤️ in Riyadh
