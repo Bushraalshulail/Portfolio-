@@ -161,23 +161,20 @@ fetch('http://localhost:8000/api/gyms?district=الملقا&gender=نسائي', 
 
 In a world where health awareness grows daily, we identified a gap: Riyadh needed a reliable, user-friendly platform to discover the perfect gym. **GymFinder Riyadh** fills that gap!
 
-### 📸 Screenshots | لقطات الشاشة
+## 📸 Screenshots
 
-<div align="center">
+### 🏠 Landing Page
+![GymFinder Riyadh Landing Page](./assets/photo_2025-11-12_20.43.04.jpeg)
 
-#### الصفحة الرئيسية | Landing Page
-![Landing Page](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=GymFinder+Landing+Page)
+---
 
-#### البحث والفلترة | Search & Filter
-![Search](https://via.placeholder.com/800x400/10B981/FFFFFF?text=Search+%26+Filter+System)
+### 🔍 Filter Menu
+![GymFinder Riyadh Filter Menu](./assets/photo_2025-11-12_20.43.07.jpeg)
 
-#### تفاصيل الجيم | Gym Details
-![Gym Details](https://via.placeholder.com/800x400/F59E0B/FFFFFF?text=Detailed+Gym+View)
+---
 
-#### لوحة التحكم | Admin Dashboard
-![Admin Dashboard](https://via.placeholder.com/800x400/EF4444/FFFFFF?text=Admin+Control+Panel)
-
-</div>
+### 💪 Gym Cards Display
+![GymFinder Riyadh Gyms List](./assets/photo_2025-11-12_20.43.12.jpeg)
 
 ---
 
