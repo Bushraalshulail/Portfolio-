@@ -98,37 +98,52 @@ This project combines a **React frontend** with a **FastAPI backend** to deliver
 
 
 ---
+### ⚙️ Installation & Setup
 
-## ⚙️ Installation & Setup
-
-### 1. Clone Repository
+#### 1. Clone Repository
 ```bash
 git clone https://github.com/yourusername/GymFinderRiyadh.git
 cd GymFinderRiyadh
+```
 
-2. Backend Setup
+#### 2. Backend Setup
+```bash
 cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
-3. Frontend Setup
+```
+
+#### 3. Frontend Setup
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
-| Name                    | Role                                  |
-| ----------------------- | ------------------------------------- |
-| **Nada**                | Project Lead, Frontend Design         |
-| **Shouq**               | Frontend Design & UI Implementation   |
-| **Nada, Munira, Shouq** | Backend Support, Data Integration, QA |
+---
 
-📜 License
+## 👥 Contributors
 
-This project is released under the MIT License.
+| Name | Role |
+|------|------|
+| Nada | Project Lead, Frontend Design |
+| Shouq | Frontend Design & UI Implementation |
+| Nada, Munira, Shouq | Backend Support, Data Integration, QA |
+
+---
+
+## 📜 License
+
+This project is released under the **MIT License**.
+
 You are free to use, modify, and distribute it with attribution.
 
-💬 Acknowledgments
+---
 
-Special thanks to Tuwaiq Academy & Holberton School for enabling this project through hands-on full-stack development training.
+## 💬 Acknowledgments
 
+Special thanks to **Tuwaiq Academy** and **Holberton School** for their guidance, mentorship, and continuous support throughout this project.
+
+Their hands-on full-stack development training enabled our team to build GymFinder Riyadh with professionalism, collaboration, and creativity.
