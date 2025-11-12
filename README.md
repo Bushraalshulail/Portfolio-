@@ -91,15 +91,15 @@ A **centralized, smart platform** that brings everything together in one seamles
 
 ### ✨ Key Highlights | المميزات الرئيسية
 
-- 🌍 **True Bilingual Experience** - واجهة ثنائية اللغة كاملة (عربي/إنجليزي) مع دعم RTL/LTR
-- 🎯 **Smart Search & Filters** - ابحث بالاسم، الحي، أو نوع النادي (رجالي/نسائي/مختلط)
-- 📱 **Fully Responsive** - يشتغل على كل الأجهزة بسلاسة
-- 🔐 **Secure Authentication** - نظام تسجيل دخول آمن مع استعادة كلمة المرور
-- 📧 **Direct Contact System** - تواصل مباشر مع الأندية عبر نموذج متكامل
-- 👑 **Admin Dashboard** - لوحة تحكم شاملة لإدارة الجيمات والمستخدمين والرسائل
-- ⚡ **Lightning Fast** - أداء فائق مع Redis caching
-- 🎨 **Single Page Experience** - تجربة صفحة واحدة سلسة مع انتقالات ناعمة
-- 📊 **Comprehensive Gym Info** - صور، مرافق، ساعات العمل، الأسعار، وسائل التواصل
+-  **True Bilingual Experience** - واجهة ثنائية اللغة كاملة (عربي/إنجليزي) مع دعم RTL/LTR
+-  **Smart Search & Filters** - ابحث بالاسم، الحي، أو نوع النادي (رجالي/نسائي/مختلط)
+-  **Fully Responsive** - يشتغل على كل الأجهزة بسلاسة
+-  **Secure Authentication** - نظام تسجيل دخول آمن مع استعادة كلمة المرور
+-  **Direct Contact System** - تواصل مباشر مع الأندية عبر نموذج متكامل
+-  **Admin Dashboard** - لوحة تحكم شاملة لإدارة الجيمات والمستخدمين والرسائل
+-  **Lightning Fast** - أداء فائق مع Redis caching
+-  **Single Page Experience** - تجربة صفحة واحدة سلسة مع انتقالات ناعمة
+-  **Comprehensive Gym Info** - صور، مرافق، ساعات العمل، الأسعار، وسائل التواصل
 
 ---
 
@@ -211,7 +211,7 @@ In a world where health awareness grows daily, we identified a gap: Riyadh neede
 ```
 ┌─────────────────────────────────────────────────┐
 │           Frontend - React + Vite                │
-│    (TailwindCSS, Context API, Lucide Icons)     │
+│    (TailwindCSS, Context API, Lucide Icons)      │
 └──────────────────┬──────────────────────────────┘
                    │ RESTful APIs
                    ▼
@@ -235,22 +235,22 @@ In a world where health awareness grows daily, we identified a gap: Riyadh neede
 ## 🛠️ Tech Stack | التقنيات المستخدمة
 
 ### Frontend الواجهة الأمامية
-- ⚛️ **React 18+** with Vite - للأداء الفائق
-- 🎨 **TailwindCSS** - للتصميم العصري
-- 🎯 **Context API** - لإدارة الحالة
-- 🔔 **Lucide Icons** - للأيقونات الجميلة
+-  **React 18+** with Vite - للأداء الفائق
+-  **TailwindCSS** - للتصميم العصري
+-  **Context API** - لإدارة الحالة
+-  **Lucide Icons** - للأيقونات الجميلة
 
 ### Backend الخلفية
-- 🚀 **FastAPI** - أسرع framework في Python
-- 🗄️ **SQLAlchemy** - للتعامل مع قاعدة البيانات
-- 🔐 **JWT Authentication** - للأمان
-- 📧 **MailTrap** - لإرسال الإيميلات
-- ⚡ **Redis** - للتخزين المؤقت
+-  **FastAPI** - أسرع framework في Python
+-  **SQLAlchemy** - للتعامل مع قاعدة البيانات
+-  **JWT Authentication** - للأمان
+-  **MailTrap** - لإرسال الإيميلات
+-  **Redis** - للتخزين المؤقت
 
 ### DevOps الأدوات
-- 🔄 **Alembic** - لإدارة الـ migrations
-- 📦 **Uvicorn** - خادم ASGI عالي الأداء
-- 🛡️ **CORS** - للأمان وإدارة الطلبات
+-  **Alembic** - لإدارة الـ migrations
+-  **Uvicorn** - خادم ASGI عالي الأداء
+-  **CORS** - للأمان وإدارة الطلبات
 
 ---
 
@@ -316,32 +316,32 @@ npm run dev
 ## 🚧 Development Journey | رحلة التطوير
 
 ### المرحلة الأولى | Stage 1: Foundation
-- ✅ إعداد البيئة التطويرية
-- ✅ تصميم قاعدة البيانات
-- ✅ استيراد بيانات الجيمات الأولية
+-  إعداد البيئة التطويرية
+-  تصميم قاعدة البيانات
+-  استيراد بيانات الجيمات الأولية
 
 ### المرحلة الثانية | Stage 2: Backend Core
-- ✅ بناء API endpoints
-- ✅ نظام المصادقة والتوثيق
-- ✅ عمليات CRUD للجيمات
-- ✅ إعداد Alembic migrations
+-  بناء API endpoints
+-  نظام المصادقة والتوثيق
+-  عمليات CRUD للجيمات
+-  إعداد Alembic migrations
 
 ### المرحلة الثالثة | Stage 3: Frontend Magic
-- ✅ تطوير المكونات الأساسية
-- ✅ ربط الـ APIs
-- ✅ نظام اللغات والـ Context
+-  تطوير المكونات الأساسية
+-  ربط الـ APIs
+-  نظام اللغات والـ Context
 
 ### المرحلة الرابعة | Stage 4: Advanced Features
-- ✅ لوحة تحكم الأدمن
-- ✅ نظام الإيميلات
+-  لوحة تحكم الأدمن
+-  نظام الإيميلات
 - ✅ Redis caching
-- ✅ تحسينات الأمان
+-  تحسينات الأمان
 
 ### المرحلة النهائية | Final Stage: Polish
-- ✅ تحويل لصفحة واحدة سلسة
-- ✅ إضافة الأنيميشن
-- ✅ تحسين الأداء
-- ✅ التوثيق الشامل
+-  تحويل لصفحة واحدة سلسة
+-  إضافة الأنيميشن
+-  تحسين الأداء
+-  التوثيق الشامل
 
 ---
 
@@ -360,17 +360,17 @@ npm run dev
 ## 🔮 Future Roadmap | خارطة الطريق
 
 ### قريب جدًا | Coming Soon
-- [ ] 📊 لوحة تحليلات متقدمة
-- [ ] 💳 نظام الدفع والاشتراكات
-- [ ] 🗺️ تكامل مع Google Maps
-- [ ] ⭐ نظام التقييمات والمراجعات
+- [ ]  لوحة تحليلات متقدمة
+- [ ]  نظام الدفع والاشتراكات
+- [ ]  تكامل مع Google Maps
+- [ ]  نظام التقييمات والمراجعات
 
 ### قيد التخطيط | In Planning
-- [ ] 📱 تطبيق موبايل (React Native)
-- [ ] 🤖 توصيات ذكية مخصصة
-- [ ] 🌙 الوضع الليلي
-- [ ] ♿ تحسينات الوصول للجميع
-- [ ] 📅 نظام الحجز المباشر
+- [ ]  تطبيق موبايل (React Native)
+- [ ]  توصيات ذكية مخصصة
+- [ ]  الوضع الليلي
+- [ ]  تحسينات الوصول للجميع
+- [ ]  نظام الحجز المباشر
 
 ---
 
@@ -403,34 +403,10 @@ npm run dev
 
 ---
 
-## 🙏 Acknowledgments | شكر وتقدير
-
-<div align="center">
-
-### شكرًا خاصًا لـ | Special Thanks To
-
-**🎓 Tuwaiq Academy**  
-على دعمهم المستمر وتوفير بيئة تعليمية ممتازة
-
-**🎓 Holberton School**  
-على التدريب العملي المكثف في تطوير Full Stack
-
----
-
-بدونهم، ما كان هالمشروع يشوف النور! 🌟  
-*Without them, this project wouldn't have seen the light!*
-
-</div>
-
 ---
 
 <div align="center">
 
 ### صُنع بـ ❤️ في الرياض | Made with ❤️ in Riyadh
-
-**Star ⭐ the repo if you like it!**  
-**نجمّ المشروع اذا عجبك! ⭐**
-
-[⬆ Back to Top](#-gymfinder-riyadh--جم-فايندر-الرياض)
 
 </div>
