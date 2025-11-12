@@ -404,14 +404,6 @@ npm run dev
 </table>
 
 
-## 📜 License | الترخيص
-
-This project is licensed under the **MIT License** - شوف ملف [LICENSE](LICENSE) للتفاصيل
-
-```
-مفتوح المصدر ♥ يعني تقدر تستخدمه، تعدله، وتوزعه بحرية
-```
-
 ---
 
 ## 🙏 Acknowledgments | شكر وتقدير
