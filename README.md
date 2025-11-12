@@ -12,8 +12,6 @@
 *Discover, Compare, and Join the Best Gyms in Riyadh*  
 *اكتشف، قارن، وانضم لأفضل صالات الرياضة بالرياض*
 
-[Live Demo](#) • [Documentation](#) • [Report Bug](#)
-
 </div>
 
 ## 📂 Project Structure | هيكل المشروع
