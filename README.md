@@ -16,7 +16,74 @@
 
 </div>
 
----
+## 📂 Project Structure | هيكل المشروع
+
+```
+GymFinderRiyadh/
+│
+├── 📁 frontend/                    # React Frontend
+│   ├── src/
+│   │   ├── components/            # React Components
+│   │   │   ├── Header.jsx        # Navigation Bar
+│   │   │   ├── Landing.jsx       # Hero Section
+│   │   │   ├── About.jsx         # About Section
+│   │   │   ├── GymCard.jsx       # Gym Display Card
+│   │   │   ├── GymDetail.jsx     # Detailed Gym View
+│   │   │   ├── SearchBar.jsx     # Search & Filter
+│   │   │   └── ContactForm.jsx   # Contact Section
+│   │   ├── contexts/              # React Contexts
+│   │   │   ├── LanguageContext.jsx
+│   │   │   └── AuthContext.jsx
+│   │   ├── App.jsx               # Main App Component
+│   │   └── main.jsx              # Entry Point
+│   ├── public/                    # Static Assets
+│   ├── package.json
+│   ├── vite.config.js
+│   └── tailwind.config.js
+│
+├── 📁 backend/                     # FastAPI Backend
+│   ├── app/
+│   │   ├── models/               # Database Models
+│   │   │   ├── gym.py
+│   │   │   ├── user.py
+│   │   │   └── message.py
+│   │   ├── routers/              # API Routes
+│   │   │   ├── auth.py          # Authentication
+│   │   │   ├── gyms.py          # Gym CRUD
+│   │   │   ├── users.py         # User Management
+│   │   │   └── admin.py         # Admin Panel
+│   │   ├── templates/            # Admin Templates (Jinja2)
+│   │   ├── database.py           # DB Configuration
+│   │   ├── main.py              # FastAPI App
+│   │   └── config.py            # Settings
+│   ├── alembic/                  # Database Migrations
+│   ├── gym_finder.db            # SQLite Database
+│   ├── requirements.txt
+│   └── import_scripts/          # Data Import Tools
+│
+├── 📄 README.md                    # هذا الملف
+└── 📄 .gitignore
+```
+
+## 💡 The Problem | المشكلة
+
+في الرياض، الناس يواجهون صعوبة في العثور على الجيم المناسب:
+- معلومات الجيمات متفرقة في أماكن كثيرة
+- صعوبة المقارنة بين الخيارات المتاحة
+- عدم وضوح المرافق والخدمات المقدمة
+- صعوبة التواصل المباشر مع الأندية
+
+**In Riyadh, fitness enthusiasts face real challenges:**
+- Gym information is scattered across multiple platforms
+- No easy way to compare facilities and services
+- Lack of clear, comprehensive details
+- Difficult to contact gyms directly
+
+## 🎯 Our Solution | الحل
+
+**GymFinder Riyadh** - منصة واحدة تجمع كل شي!
+
+A **centralized, smart platform** that brings everything together in one seamless experience.
 
 ## 🌟 What Makes Us Different | ايش يميزنا
 
@@ -27,20 +94,92 @@
 ### ✨ Key Highlights | المميزات الرئيسية
 
 - 🌍 **True Bilingual Experience** - واجهة ثنائية اللغة كاملة (عربي/إنجليزي) مع دعم RTL/LTR
-- 🎯 **Smart Search & Filters** - ابحث بالاسم، الحي، أو نوع النادي بسهولة
+- 🎯 **Smart Search & Filters** - ابحث بالاسم، الحي، أو نوع النادي (رجالي/نسائي/مختلط)
 - 📱 **Fully Responsive** - يشتغل على كل الأجهزة بسلاسة
-- 🔐 **Secure Authentication** - نظام تسجيل دخول آمن ومحمي
-- 📧 **Direct Contact System** - تواصل مباشر مع الأندية
-- 👑 **Admin Dashboard** - لوحة تحكم شاملة لإدارة النظام
+- 🔐 **Secure Authentication** - نظام تسجيل دخول آمن مع استعادة كلمة المرور
+- 📧 **Direct Contact System** - تواصل مباشر مع الأندية عبر نموذج متكامل
+- 👑 **Admin Dashboard** - لوحة تحكم شاملة لإدارة الجيمات والمستخدمين والرسائل
 - ⚡ **Lightning Fast** - أداء فائق مع Redis caching
+- 🎨 **Single Page Experience** - تجربة صفحة واحدة سلسة مع انتقالات ناعمة
+- 📊 **Comprehensive Gym Info** - صور، مرافق، ساعات العمل، الأسعار، وسائل التواصل
 
 ---
 
-## 🚀 The Vision | الرؤية
+## 🔌 API Documentation | توثيق الـ API
+
+### Authentication Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/auth/register` | تسجيل مستخدم جديد |
+| `POST` | `/api/auth/login` | تسجيل الدخول |
+| `POST` | `/api/auth/logout` | تسجيل الخروج |
+| `POST` | `/api/auth/forgot-password` | استعادة كلمة المرور |
+
+### Gyms Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/gyms` | جلب جميع الجيمات (مع البحث والفلترة) |
+| `GET` | `/api/gyms/{id}` | جلب تفاصيل جيم معين |
+| `POST` | `/api/gyms` | إضافة جيم جديد (Admin only) |
+| `PUT` | `/api/gyms/{id}` | تحديث معلومات جيم (Admin only) |
+| `DELETE` | `/api/gyms/{id}` | حذف جيم (Admin only) |
+
+### Users Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/users/profile` | جلب ملف المستخدم الشخصي |
+| `PUT` | `/api/users/profile` | تحديث الملف الشخصي |
+| `GET` | `/api/users` | جلب جميع المستخدمين (Admin only) |
+
+### Messages Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/messages` | إرسال رسالة تواصل |
+| `GET` | `/api/messages` | جلب جميع الرسائل (Admin only) |
+
+### Example Request
+
+```javascript
+// البحث عن الجيمات
+fetch('http://localhost:8000/api/gyms?district=الملقا&gender=نسائي', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_TOKEN_HERE'
+  }
+})
+.then(res => res.json())
+.then(data => console.log(data));
+```
+
+---
+
+## 🚀 Overview | نظرة عامة
 
 في عالم يزداد فيه الوعي الصحي يوم بعد يوم، وجدنا أن الناس في الرياض يحتاجون منصة موثوقة وسهلة للعثور على النادي المناسب. **GymFinder Riyadh** جاء ليحل هذي المشكلة!
 
 In a world where health awareness grows daily, we identified a gap: Riyadh needed a reliable, user-friendly platform to discover the perfect gym. **GymFinder Riyadh** fills that gap!
+
+### 📸 Screenshots | لقطات الشاشة
+
+<div align="center">
+
+#### الصفحة الرئيسية | Landing Page
+![Landing Page](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=GymFinder+Landing+Page)
+
+#### البحث والفلترة | Search & Filter
+![Search](https://via.placeholder.com/800x400/10B981/FFFFFF?text=Search+%26+Filter+System)
+
+#### تفاصيل الجيم | Gym Details
+![Gym Details](https://via.placeholder.com/800x400/F59E0B/FFFFFF?text=Detailed+Gym+View)
+
+#### لوحة التحكم | Admin Dashboard
+![Admin Dashboard](https://via.placeholder.com/800x400/EF4444/FFFFFF?text=Admin+Control+Panel)
+
+</div>
 
 ---
 
@@ -49,21 +188,23 @@ In a world where health awareness grows daily, we identified a gap: Riyadh neede
 ### 🔍 For Gym Seekers | للباحثين عن الجيمات
 
 ```
-✓ اكتشف أفضل الجيمات حولك
-✓ قارن الأسعار والخدمات
-✓ شاهد الصور والتقييمات
-✓ تواصل مباشرة مع الإدارة
-✓ احفظ مفضلاتك في حسابك
+✓ اكتشف أفضل الجيمات حولك حسب الحي
+✓ قارن الأسعار والمرافق والخدمات
+✓ شاهد صور حقيقية وساعات العمل
+✓ فلتر حسب النوع (رجالي/نسائي/مختلط)
+✓ تواصل مباشرة مع إدارة النادي
+✓ احفظ مفضلاتك في حسابك الشخصي
 ```
 
 ### 👑 For Administrators | للمديرين
 
 ```
-✓ إدارة كاملة للجيمات
-✓ متابعة الرسائل والاستفسارات
-✓ إدارة المستخدمين
-✓ تحليلات وإحصائيات
-✓ نظام آمن ومحمي
+✓ إدارة كاملة للجيمات (إضافة/تعديل/حذف)
+✓ متابعة الرسائل والاستفسارات الواردة
+✓ إدارة حسابات المستخدمين
+✓ رفع الصور وتحديث المعلومات
+✓ إحصائيات شاملة عن النظام
+✓ نظام آمن محمي بصلاحيات
 ```
 
 ---
