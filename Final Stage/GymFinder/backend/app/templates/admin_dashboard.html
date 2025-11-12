@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Gym Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-teal-50 via-white to-emerald-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-teal-600 to-emerald-600 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">🏋️ Gym Finder Admin</h1>
+                <div class="flex items-center gap-4">
+                    <!-- User Dropdown -->
+                    <div class="relative" id="user-menu-container">
+                        <button 
+                            id="user-menu-button"
+                            class="text-teal-100 hover:text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-700 transition cursor-pointer flex items-center gap-2"
+                            onclick="toggleUserMenu()"
+                        >
+                            <span>Welcome, {{ current_user.name }}</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div 
+                            id="user-menu-dropdown"
+                            class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-teal-200 py-2 z-50"
+                        >
+                            <a 
+                                href="http://localhost:5173/" 
+                                class="block px-4 py-2 text-gray-700 hover:bg-teal-50 transition"
+                            >
+                                Return to Home
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+    let userMenuOpen = false;
+
+    function toggleUserMenu() {
+        const dropdown = document.getElementById('user-menu-dropdown');
+        userMenuOpen = !userMenuOpen;
+        if (userMenuOpen) {
+            dropdown.classList.remove('hidden');
+        } else {
+            dropdown.classList.add('hidden');
+        }
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const container = document.getElementById('user-menu-container');
+        const dropdown = document.getElementById('user-menu-dropdown');
+        
+        if (container && !container.contains(event.target)) {
+            dropdown.classList.add('hidden');
+            userMenuOpen = false;
+        }
+    });
+    </script>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md border-b border-teal-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex space-x-8">
+                <a href="/admin/dashboard" class="border-b-2 border-teal-600 text-teal-600 py-4 px-1 font-medium">
+                    Dashboard
+                </a>
+                <a href="/admin/gyms" class="text-gray-500 hover:text-teal-700 hover:border-teal-300 border-b-2 border-transparent py-4 px-1 font-medium">
+                    Gyms
+                </a>
+                <a href="/admin/users" class="text-gray-500 hover:text-teal-700 hover:border-teal-300 border-b-2 border-transparent py-4 px-1 font-medium">
+                    Users
+                </a>
+                <a href="/admin/contact-messages" class="text-gray-500 hover:text-teal-700 hover:border-teal-300 border-b-2 border-transparent py-4 px-1 font-medium">
+                    Contact Messages
+                </a>
+                <a href="/admin/statistics" class="text-gray-500 hover:text-teal-700 hover:border-teal-300 border-b-2 border-transparent py-4 px-1 font-medium">
+                    Statistics
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h2 class="text-3xl font-bold text-teal-900 mb-8">Dashboard Overview</h2>
+        
+        <!-- Statistics Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
+            <!-- Total Gyms -->
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">Total Gyms</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-2">{{ total_gyms }}</p>
+                    </div>
+                    <div class="bg-teal-100 rounded-full p-3">
+                        <span class="text-2xl">🏋️</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Facilities -->
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-400">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">Facilities</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-2">{{ total_facilities }}</p>
+                    </div>
+                    <div class="bg-teal-100 rounded-full p-3">
+                        <span class="text-2xl">🏊</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Equipment -->
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">Equipment</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-2">{{ total_equipment }}</p>
+                    </div>
+                    <div class="bg-teal-100 rounded-full p-3">
+                        <span class="text-2xl">⚙️</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Users -->
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-600">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">Users</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-2">{{ total_users }}</p>
+                    </div>
+                    <div class="bg-teal-100 rounded-full p-3">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Messages -->
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-600">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">Contact Messages</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-2">{{ total_contact_messages }}</p>
+                    </div>
+                    <div class="bg-teal-100 rounded-full p-3">
+                        <span class="text-2xl">✉️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Quick Actions</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <a href="/admin/gyms" class="bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-lg p-4 text-center transition">
+                    <span class="text-2xl block mb-2">🏋️</span>
+                    <span class="font-semibold text-teal-700">Manage Gyms</span>
+                </a>
+                <a href="/admin/users" class="bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-lg p-4 text-center transition">
+                    <span class="text-2xl block mb-2">👥</span>
+                    <span class="font-semibold text-teal-700">Manage Users</span>
+                </a>
+                <a href="/admin/contact-messages" class="bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-lg p-4 text-center transition">
+                    <span class="text-2xl block mb-2">✉️</span>
+                    <span class="font-semibold text-teal-700">Contact Messages</span>
+                </a>
+                <a href="/admin/statistics" class="bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-lg p-4 text-center transition">
+                    <span class="text-2xl block mb-2">📊</span>
+                    <span class="font-semibold text-teal-700">View Statistics</span>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
