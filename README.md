@@ -129,8 +129,9 @@ npm run dev
 | Name | Role |
 |------|------|
 | Nada | Project Lead, Frontend Design |
-| Shouq | Frontend Design & UI Implementation |
-| Nada, Munira, Shouq | Backend Support, Data Integration, QA |
+| Shouq | Frontend Design & QA |
+| Bushra | UI Implementation & Backend Support |
+| Munira | Data Integration |
 
 ---
 
