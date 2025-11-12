@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test API Endpoints</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+        .endpoint { background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .endpoint h3 { margin-top: 0; color: #333; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 10px; padding: 10px; background: #f8f9fa; border-radius: 5px; font-family: monospace; font-size: 12px; max-height: 400px; overflow-y: auto; }
+        .success { color: green; }
+        .error { color: red; }
+        .info { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>🧪 API Endpoint Tester</h1>
+    <p>Test all backend endpoints to verify data is available</p>
+
+    <div class="endpoint">
+        <h3>1. Root Endpoint (/)</h3>
+        <p>This should show: {"status":"ok","message":"Gym Finder API is running"}</p>
+        <button onclick="testRoot()">Test /</button>
+        <div id="root-result" class="result"></div>
+    </div>
+
+    <div class="endpoint">
+        <h3>2. Health Check (/health)</h3>
+        <p>Should show database stats: gyms, facilities, equipment counts</p>
+        <button onclick="testHealth()">Test /health</button>
+        <div id="health-result" class="result"></div>
+    </div>
+
+    <div class="endpoint">
+        <h3>3. Gyms Endpoint (/gyms)</h3>
+        <p>Should return array with 202 gyms (this is the important one!)</p>
+        <button onclick="testGyms()">Test /gyms</button>
+        <div id="gyms-result" class="result"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://127.0.0.1:8000';
+
+        async function testRoot() {
+            const result = document.getElementById('root-result');
+            result.innerHTML = 'Testing...';
+            try {
+                const response = await fetch(`${API_BASE}/`);
+                const data = await response.json();
+                result.innerHTML = `<span class="success">✅ SUCCESS</span><br>Status: ${response.status}<br><pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                result.innerHTML = `<span class="error">❌ ERROR</span><br>${error.message}`;
+            }
+        }
+
+        async function testHealth() {
+            const result = document.getElementById('health-result');
+            result.innerHTML = 'Testing...';
+            try {
+                const response = await fetch(`${API_BASE}/health`);
+                const data = await response.json();
+                result.innerHTML = `<span class="success">✅ SUCCESS</span><br>Status: ${response.status}<br>Gyms: ${data.gyms}<br>Facilities: ${data.facilities}<br>Equipment: ${data.equipment}<br><pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                result.innerHTML = `<span class="error">❌ ERROR</span><br>${error.message}`;
+            }
+        }
+
+        async function testGyms() {
+            const result = document.getElementById('gyms-result');
+            result.innerHTML = 'Testing... (this may take a moment, loading 202 gyms...)';
+            try {
+                const response = await fetch(`${API_BASE}/gyms`);
+                const data = await response.json();
+                result.innerHTML = `<span class="success">✅ SUCCESS</span><br>Status: ${response.status}<br>Total Gyms: ${data.length}<br>First Gym: ${data[0]?.name_en || 'N/A'}<br>Sample:<br><pre>${JSON.stringify(data.slice(0, 2), null, 2)}</pre>`;
+            } catch (error) {
+                result.innerHTML = `<span class="error">❌ ERROR</span><br>${error.message}<br>Make sure server is running!`;
+            }
+        }
+    </script>
+</body>
+</html>
+
