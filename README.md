@@ -65,11 +65,11 @@ GymFinderRiyadh/
 
 ## 💡 The Problem | المشكلة
 
-في الرياض، الناس يواجهون صعوبة في العثور على الجيم المناسب:
-- معلومات الجيمات متفرقة في أماكن كثيرة
+في الرياض، الناس يواجهون صعوبة في العثور على النادي الرياضي المناسب:
+- معلومات الأندية الرياضية متفرقة في أماكن كثيرة
 - صعوبة المقارنة بين الخيارات المتاحة
 - عدم وضوح المرافق والخدمات المقدمة
-- صعوبة التواصل المباشر مع الأندية
+- صعوبة التواصل المباشر مع الأندية الرياضة
 
 **In Riyadh, fitness enthusiasts face real challenges:**
 - Gym information is scattered across multiple platforms
@@ -85,18 +85,18 @@ A **centralized, smart platform** that brings everything together in one seamles
 
 ## 🌟 What Makes Us Different | ايش يميزنا
 
-**GymFinder Riyadh** مو بس موقع عادي للبحث عن الجيمات - هو تجربة متكاملة مصممة خصيصًا للسوق السعودي!
+**GymFinder Riyadh** مو بس موقع عادي للبحث عن الأندية الرياضية - هو تجربة متكاملة مصممة خصيصًا للسوق السعودي!
 
 **GymFinder Riyadh** isn't just another gym directory - it's a complete fitness discovery platform crafted specifically for the Saudi market!
 
 ### ✨ Key Highlights | المميزات الرئيسية
 
 -  **True Bilingual Experience** - واجهة ثنائية اللغة كاملة (عربي/إنجليزي) مع دعم RTL/LTR
--  **Smart Search & Filters** - ابحث بالاسم، الحي، أو نوع النادي (رجالي/نسائي/مختلط)
+-  **Smart Search & Filters** - ابحث بالاسم، الحي، أو نوع النادي الرياضي (رجالي/نسائي/مختلط)
 -  **Fully Responsive** - يشتغل على كل الأجهزة بسلاسة
 -  **Secure Authentication** - نظام تسجيل دخول آمن مع استعادة كلمة المرور
--  **Direct Contact System** - تواصل مباشر مع الأندية عبر نموذج متكامل
--  **Admin Dashboard** - لوحة تحكم شاملة لإدارة الجيمات والمستخدمين والرسائل
+-  **Direct Contact System** - تواصل مباشر مع الأندية الرياضية عبر نموذج متكامل
+-  **Admin Dashboard** - لوحة تحكم شاملة لإدارة الأندية الرياضية والمستخدمين والرسائل
 -  **Lightning Fast** - أداء فائق مع Redis caching
 -  **Single Page Experience** - تجربة صفحة واحدة سلسة مع انتقالات ناعمة
 -  **Comprehensive Gym Info** - صور، مرافق، ساعات العمل، الأسعار، وسائل التواصل
@@ -118,11 +118,11 @@ A **centralized, smart platform** that brings everything together in one seamles
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `/api/gyms` | جلب جميع الجيمات (مع البحث والفلترة) |
-| `GET` | `/api/gyms/{id}` | جلب تفاصيل جيم معين |
-| `POST` | `/api/gyms` | إضافة جيم جديد (Admin only) |
-| `PUT` | `/api/gyms/{id}` | تحديث معلومات جيم (Admin only) |
-| `DELETE` | `/api/gyms/{id}` | حذف جيم (Admin only) |
+| `GET` | `/api/gyms` | جلب جميع الأندية الرياضية (مع البحث والفلترة) |
+| `GET` | `/api/gyms/{id}` | جلب تفاصيل نادي رياضي معين |
+| `POST` | `/api/gyms` | إضافة نادي رياضي جديد (Admin only) |
+| `PUT` | `/api/gyms/{id}` | تحديث معلومات نادي رياضي (Admin only) |
+| `DELETE` | `/api/gyms/{id}` | حذف نادي رياضي (Admin only) |
 
 ### Users Endpoints
 
@@ -157,7 +157,7 @@ fetch('http://localhost:8000/api/gyms?district=الملقا&gender=نسائي', 
 
 ## 🚀 Overview | نظرة عامة
 
-في عالم يزداد فيه الوعي الصحي يوم بعد يوم، وجدنا أن الناس في الرياض يحتاجون منصة موثوقة وسهلة للعثور على النادي المناسب. **GymFinder Riyadh** جاء ليحل هذي المشكلة!
+في عالم يزداد فيه الوعي الصحي يوم بعد يوم، وجدنا أن الناس في الرياض يحتاجون منصة موثوقة وسهلة للعثور على النادي الرياضي المناسب. **GymFinder Riyadh** جاء ليحل هذي المشكلة!
 
 In a world where health awareness grows daily, we identified a gap: Riyadh needed a reliable, user-friendly platform to discover the perfect gym. **GymFinder Riyadh** fills that gap!
 
@@ -180,13 +180,13 @@ In a world where health awareness grows daily, we identified a gap: Riyadh neede
 
 ## 🎬 Features Showcase | استعراض المميزات
 
-### 🔍 For Gym Seekers | للباحثين عن الجيمات
+### 🔍 For Gym Seekers | للباحثين عن الأندية الرياضية
 
 ```
-✓ اكتشف أفضل الجيمات حولك حسب الحي
+✓ اكتشف أفضل الأندية الرياضية حولك حسب الحي
 ✓ قارن الأسعار والمرافق والخدمات
 ✓ شاهد صور حقيقية وساعات العمل
-✓ فلتر حسب النوع (رجالي/نسائي/مختلط)
+✓ فلتر حسب النوع (رجالي/نسائي)
 ✓ تواصل مباشرة مع إدارة النادي
 ✓ احفظ مفضلاتك في حسابك الشخصي
 ```
@@ -194,7 +194,7 @@ In a world where health awareness grows daily, we identified a gap: Riyadh neede
 ### 👑 For Administrators | للمديرين
 
 ```
-✓ إدارة كاملة للجيمات (إضافة/تعديل/حذف)
+✓ إدارة كاملة الأندية الرياضية (إضافة/تعديل/حذف)
 ✓ متابعة الرسائل والاستفسارات الواردة
 ✓ إدارة حسابات المستخدمين
 ✓ رفع الصور وتحديث المعلومات
@@ -323,7 +323,7 @@ npm run dev
 ### المرحلة الثانية | Stage 2: Backend Core
 -  بناء API endpoints
 -  نظام المصادقة والتوثيق
--  عمليات CRUD للجيمات
+-  عمليات CRUD للأندية الرياضية
 -  إعداد Alembic migrations
 
 ### المرحلة الثالثة | Stage 3: Frontend Magic
