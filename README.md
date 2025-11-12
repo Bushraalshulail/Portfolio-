@@ -378,32 +378,30 @@ npm run dev
 ---
 
 ## 👥 The Dream Team | الفريق الحالم
-
 <table>
   <tr>
     <td align="center">
-      <img src="https://via.placeholder.com/100" width="100px;" alt="Nada"/><br />
+      <sub>👩‍💻</sub><br />
       <sub><b>Nada</b></sub><br />
       <sub>Project Lead & Frontend Design</sub>
     </td>
     <td align="center">
-      <img src="https://via.placeholder.com/100" width="100px;" alt="Shouq"/><br />
+      <sub>👩‍💻</sub><br />
       <sub><b>Shouq</b></sub><br />
       <sub>Frontend Design & QA</sub>
     </td>
     <td align="center">
-      <img src="https://via.placeholder.com/100" width="100px;" alt="Bushra"/><br />
+      <sub>👩‍💻</sub><br />
       <sub><b>Bushra</b></sub><br />
       <sub>UI Implementation & Backend</sub>
     </td>
     <td align="center">
-      <img src="https://via.placeholder.com/100" width="100px;" alt="Munira"/><br />
+      <sub>👩‍💻</sub><br />
       <sub><b>Munira</b></sub><br />
       <sub>Data Integration</sub>
     </td>
   </tr>
 </table>
-
 ---
 
 ## 📜 License | الترخيص
