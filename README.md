@@ -164,17 +164,20 @@ In a world where health awareness grows daily, we identified a gap: Riyadh neede
 ## 📸 Screenshots
 
 ### 🏠 Landing Page
-![GymFinder Riyadh Landing Page](./assets/photo_2025-11-12_20.43.04.jpeg)
+![GymFinder Riyadh Landing Page](![photo_2025-11-12 20 43 04](https://github.com/user-attachments/assets/104e2e5b-7d9a-49ce-8e30-5e9923d4e3b0)
+)
 
 ---
 
 ### 🔍 Filter Menu
-![GymFinder Riyadh Filter Menu](./assets/photo_2025-11-12_20.43.07.jpeg)
+![GymFinder Riyadh Filter Menu](![photo_2025-11-12 20 43 07](https://github.com/user-attachments/assets/33c16089-9342-4684-9a00-d460d09d4427)
+)
 
 ---
 
 ### 💪 Gym Cards Display
-![GymFinder Riyadh Gyms List](./assets/photo_2025-11-12_20.43.12.jpeg)
+![GymFinder Riyadh Gyms List](![photo_2025-11-12 20 43 12](https://github.com/user-attachments/assets/1e954fa4-134b-47fb-ba6c-3a3191528b53)
+)
 
 ---
 
