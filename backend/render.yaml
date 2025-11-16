@@ -3,6 +3,7 @@ services:
     name: gym-finder-backend
     env: python
     region: frankfurt
+    rootDirectory: backend
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn app.main:app --host=0.0.0.0 --port=10000"
     plan: free
